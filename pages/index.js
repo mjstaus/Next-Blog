@@ -5,8 +5,7 @@ import utilStyles from '../styles/utils.module.css';
 
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  console.log("THERE!");
+  const allPostsData = getSortedPostsData();  
   return {
     props: {
       allPostsData,
@@ -21,7 +20,9 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello, I'm Martha! I'm a full-stack web developer. Contact me on <a href="https://www.linkedin.com/in/mjstaus/">LinkedIn</a> or <a href="https://twitter.com/mjstau">Twitter</a></p>
+        <p>Hello, I'm <b>Martha</b> -  a junior full-stack web developer.</p>
+        <p>This is where I keep my notes on the things I'm learning!</p>
+        <p>Contact me on <a href="https://www.linkedin.com/in/mjstaus/">LinkedIn</a> or <a href="https://twitter.com/mjstau">Twitter</a></p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
